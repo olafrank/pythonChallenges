@@ -23,11 +23,13 @@ def format_data(account):
 
 
 game_should_continue=True
+account_b = random.choice(data)
 
 while game_should_continue:
 # generate random accounts"""
-    account_a = random.choice(data)
-    account_b = random.choice(data)
+    account_a = account_b
+    account_b=random.choice(data)
+    
     if account_a == account_b:
         account_b = random.choice(data)
 
